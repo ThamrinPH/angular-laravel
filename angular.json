@@ -38,7 +38,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass",
+              "src/styles.scss",
               "node_modules/bootstrap/scss/bootstrap.scss"
             ],
             "scripts": []
@@ -102,7 +102,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -138,5 +138,10 @@
   "defaultProject": "angular-laravel",
   "cli": {
     "analytics": "b0a2b9ea-44d5-44f8-9f15-8d8646fc2774"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "scss"
+    }
   }
 }
