@@ -7,7 +7,14 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "sass",
+          "spec": false
+        },
+        "@schematics/angular:module": {
+          "spec": false
+        },
+        "@schematics/angular:service": {
+          "spec": false
         },
         "@schematics/angular:application": {
           "strict": true
@@ -31,7 +38,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.sass",
+              "node_modules/bootstrap/scss/bootstrap.scss"
             ],
             "scripts": []
           },
@@ -127,5 +135,8 @@
       }
     }
   },
-  "defaultProject": "angular-laravel"
+  "defaultProject": "angular-laravel",
+  "cli": {
+    "analytics": "b0a2b9ea-44d5-44f8-9f15-8d8646fc2774"
+  }
 }
