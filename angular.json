@@ -7,7 +7,14 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "spec" : false
+        },
+        "@schematics/angular:module": {
+          "spec" : false
+        },
+        "@schematics/angular:service": {
+          "spec" : false
         },
         "@schematics/angular:application": {
           "strict": true
@@ -127,5 +134,8 @@
       }
     }
   },
-  "defaultProject": "angular-laravel"
+  "defaultProject": "angular-laravel",
+  "cli": {
+    "analytics": "7539c4ff-0f43-4a80-b6f6-4013f84d5436"
+  }
 }
