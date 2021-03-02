@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
 
     const data = {
       username: formData.email,
-      password: 'password',
+      password: formData.password,
       grant_type: 'password',
       client_id: 2,
       client_secret: 'YBWMsPjUI8g6suVdrj8EkLBwKUpxCGYPn8dKs8h7',
