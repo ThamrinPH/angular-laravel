@@ -13,4 +13,8 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.loggedIn = localStorage.getItem('token') !== null;
   }
+
+  logout() {
+    localStorage.removeItem('token');
+  }
 }
