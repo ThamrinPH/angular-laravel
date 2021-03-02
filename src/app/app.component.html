@@ -1,1 +1,15 @@
-<router-outlet></router-outlet>
+<nav class="navbar navbar-dark bg-dark mb-4">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a routerLink="/" class="nav-link">Home</a>
+        </li>
+    </ul>
+    <div class="navbar-nav">
+        <a routerLink="/login" class="nav-link" *ngIf="!loggedIn" >Login</a>
+        <a routerLink="/login" class="nav-link" *ngIf="loggedIn" >Logout</a>
+    </div>
+</nav>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
